@@ -2,23 +2,23 @@ import React from 'react';
 
 function Navbar() {
    return (
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
          </button>
-         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-               <li class="nav-item">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+         <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav mx-auto">
+               <li className="nav-item">
+                  <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
                </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#">About Me</a>
+               <li className="nav-item">
+                  <a className="nav-link" href="#">About Me</a>
                </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#">Projects</a>
+               <li className="nav-item">
+                  <a className="nav-link" href="#">Projects</a>
                </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+               <li className="nav-item">
+                  <a className="nav-link" href="#">Contact</a>
                </li>
             </ul>
          </div>
