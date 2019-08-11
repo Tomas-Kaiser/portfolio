@@ -21,7 +21,7 @@ a {
 */
 
 .callout {
-  height: 50vh;
+  height: 30vh;
   background-color: bisque;
 
   background: url("../src/static/images/code.jpg") no-repeat center center fixed; 
@@ -34,10 +34,13 @@ a {
 .jumbotron {
   background-color: #daeaf9d6;
   position: relative;
+  padding: 2rem 1rem;
   top: 10%;
-  width: 400px;
+  max-width: 400px;
   margin: auto;
 }
+
+
 
 /*
 **
