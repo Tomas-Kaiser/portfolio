@@ -16,7 +16,7 @@ a {
 
 /*
 **
-*** CALLOUT Section
+*** Callout Section
 **
 */
 
@@ -37,4 +37,14 @@ a {
   top: 10%;
   width: 400px;
   margin: auto;
+}
+
+/*
+**
+*** Navbar Section
+**
+*/
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(194, 191, 191);
 }
