@@ -24,7 +24,7 @@ a {
   height: 30vh;
   background-color: bisque;
 
-  background: url("../src/static/images/code.jpg") no-repeat center center fixed; 
+  background: url("./static/images/code.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
