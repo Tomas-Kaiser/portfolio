@@ -11,9 +11,7 @@ class Technologies extends Component {
       return (
          <section className="container mt-3">
             <article className="technologies">
-               <h3 className="text-center">Technologies I work with</h3>
-
-               <hr />
+               <h3 className="text-center mb-4">Technologies I work with</h3>
 
                <div className="row justify-content-center">
                   {
