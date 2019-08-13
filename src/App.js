@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './components/layout/Header';
 import Navbar from './components/layout/Navbar';
 import AboutMe from './components/layout/AboutMe';
+import Technologies from './components/layout/Technologies'
 
 import './App.css';
 
@@ -12,6 +13,7 @@ class App extends Component {
         <Header />
         <Navbar />
         <AboutMe />
+        <Technologies />
       </div>
     )
   }
