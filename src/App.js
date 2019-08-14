@@ -4,6 +4,7 @@ import Navbar from './components/layout/Navbar';
 import AboutMe from './components/layout/AboutMe';
 import Technologies from './components/layout/Technologies'
 import Projects from './components/layout/Projects'
+import Contact from './components/layout/Contact'
 
 import './App.css';
 
@@ -16,6 +17,7 @@ class App extends Component {
         <AboutMe />
         <Technologies />
         <Projects />
+        <Contact />
       </div>
     )
   }
