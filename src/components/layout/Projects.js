@@ -42,15 +42,15 @@ class Projects extends Component {
             <h2>Projects</h2>
             <div className="row">
                {
-                  projects.map((project) => (
-                     <div className="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+                  projects.map((project, index) => (
+                     <div className="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch" key={index}>
                         <div className="card" style={cardStyle}>
                            <img src={require(`../../static/images/${project.img}.png`)} className="card-img-top" alt={project.img} />
                            <div className="card-body d-flex flex-column">
                               <h5 className="card-title text-center">{project.name}</h5>
                               <ul>
-                                 {project.technologies.map((tech) => (
-                                    <li className="card-text">{tech}</li>
+                                 {project.technologies.map((tech, index) => (
+                                    <li className="card-text" key={index}>{tech}</li>
                                  ))}
                               </ul>
                               <div className="text-center card-footer mt-auto">
