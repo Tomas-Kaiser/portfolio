@@ -34,6 +34,13 @@ class Projects extends Component {
             technologies: ["HTML5", "CSS3", "Bootstrap"],
             github: "https://github.com/Tomas-Kaiser/Code-Institute-Milestone-1-User-Centric-Frontend",
             link: "https://tomas-kaiser.github.io/Code-Institute-Milestone-1-User-Centric-Frontend/",
+         },
+         {
+            name: "Neigberhood MAP",
+            img: "ReactJS_Neigberhood_project",
+            technologies: ["HTML5", "CSS3", "ReactJS", "Unsplash REST API"],
+            github: "https://github.com/Tomas-Kaiser/Neigborhood-MAP-reactJS-FEND-UDACITY",
+            link: "https://tomas-kaiser.github.io/Neigborhood-MAP-reactJS-FEND-UDACITY/",
          }
       ];
 
