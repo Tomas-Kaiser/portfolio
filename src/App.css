@@ -79,6 +79,126 @@ hr {
 
 /*
 **
+*** Experience Section
+**
+*/
+
+.timeline {
+  position: relative;
+  margin: 50px auto;
+  padding: 40px 0;
+  max-width: 1000px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #c5c5c5
+}
+
+.timeline ul {
+  margin: 0;
+  padding: 0;
+
+}
+
+.timeline ul li {
+  list-style: none;
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+}
+
+.timeline ul li:nth-child(odd) {
+  float: left;
+  text-align: right;
+  clear: both;
+}
+
+.timeline ul li:nth-child(even) {
+  float: right;
+  text-align: left;
+  clear: both;
+}
+
+.content {
+  padding-bottom: 20px;
+
+}
+
+.timeline ul li:nth-child(odd):before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  background: rgba(233,33,99,1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(233,33,99,0.2);
+}
+
+.timeline ul li:nth-child(even):before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background: rgba(233,33,99,1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(233,33,99,0.2);
+}
+
+.timeline ul li h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: rgba(233,33,99,1);
+}
+
+.timeline ul li p {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.timeline ul li .time h4 {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline ul li:nth-child(odd) .time {
+  position: absolute;
+  top: 16px;
+  right: -156px;
+  margin: 0;
+  padding: 8px 16px;
+  background: rgba(233,33,99,1);
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(233,33,99,0.3);
+}
+
+.timeline ul li:nth-child(even) .time {
+  position: absolute;
+  top: 16px;
+  left: -156px;
+  margin: 0;
+  padding: 8px 16px;
+  background: rgba(233,33,99,1);
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(233,33,99,0.3);
+}
+
+
+/*
+**
 *** Footer Section
 **
 */
@@ -88,21 +208,6 @@ footer {
   color: #fafafa;
   min-height: 120px;
   margin: 0;
-}
-
-footer .cv-pdf span{
-  color: #fafafa;
-  text-align: center;
-  font-size: 18p;
-  padding-left: 5px;
-}
-
-footer .cv-pdf span:hover {
-  color: #e84610;
-  transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  -webkit-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
 }
 
 .social-links {
