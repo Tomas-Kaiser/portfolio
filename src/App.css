@@ -170,10 +170,12 @@ hr {
   font-size: 14px;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .timeline ul li:nth-child(odd) .time {
   position: absolute;
+  width: 136px;
   top: 16px;
   right: -156px;
   margin: 0;
@@ -186,6 +188,7 @@ hr {
 
 .timeline ul li:nth-child(even) .time {
   position: absolute;
+  width: 136px;
   top: 16px;
   left: -156px;
   margin: 0;
