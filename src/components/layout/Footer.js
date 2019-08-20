@@ -17,8 +17,7 @@ function Footer() {
             <div class="col-sm-4">
                <h5>Download CV</h5>
                <p class="inline-block">
-                  Need a printable verstion of my CV? Download it here.
-               <a href="assets/cv/CV.pdf" target="_blank" class="cv-pdf"><span><FontAwesomeIcon icon={faDownload} /></span></a>
+                  Need a printable verstion of my CV? Send me a message.
                </p>
             </div>
             <div class="col-sm-4 text-center">
