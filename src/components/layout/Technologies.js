@@ -9,8 +9,7 @@ class Technologies extends Component {
    render() {
       console.log(data)
       return (
-         <section className="container mt-3">
-            <article className="technologies">
+         <section className="container container-technologies mt-3">
                <h2 className="mb-4">Technologies I work with</h2>
 
                <div className="row justify-content-center">
@@ -80,8 +79,6 @@ class Technologies extends Component {
                      ))
                   }
                </div>
-
-            </article>
          </section>
       )
    }

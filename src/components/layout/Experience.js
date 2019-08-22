@@ -2,7 +2,7 @@ import React from 'react';
 
 function Experience() {
    return (
-      <section class="container">
+      <section class="container container-exp">
          <div class="timeline">
             <ul>
                <li>

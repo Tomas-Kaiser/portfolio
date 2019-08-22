@@ -34,6 +34,20 @@ hr {
   transition: linear .5s;
 }
 
+
+
+/*
+**
+*** Navbar Section
+**
+*/
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(194, 191, 191);
+}
+
+
+
 /*
 **
 *** Callout/header Section
@@ -87,21 +101,13 @@ hr {
 
 /*
 **
-*** Navbar Section
-**
-*/
-
-.navbar-light .navbar-nav .nav-link {
-  color: rgb(194, 191, 191);
-}
-
-
-
-/*
-**
 *** About Me Section
 **
 */
+
+.container-about {
+  padding: 0 0 50px 0;
+}
 
 .img-lang {
   height: 50px;
@@ -111,15 +117,30 @@ hr {
   font-size: 12px;
 }
 
+
+
 /*
 **
-*** Contact Section
+*** Technologies Section
 **
 */
 
-.contact {
-  padding: 10px 0;
+.container-technologies {
+  padding: 0 0 50px 0;
 }
+
+
+
+/*
+**
+*** Projects Section
+**
+*/
+
+.container-projects {
+  padding: 0 0 50px 0;
+}
+
 
 
 /*
@@ -243,6 +264,19 @@ hr {
   border-radius: 18px;
   box-shadow: 0 0 0 3px rgba(233,33,99,0.3);
 }
+
+
+
+/*
+**
+*** Contact Section
+**
+*/
+
+.container-contact {
+  padding: 0 0 50px 0;
+}
+
 
 
 /*

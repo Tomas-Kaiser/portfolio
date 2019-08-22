@@ -45,7 +45,7 @@ class Projects extends Component {
       ];
 
       return (
-         <section className="container">
+         <section className="container container-projects">
             <h2>Projects</h2>
             <div className="row">
                {
