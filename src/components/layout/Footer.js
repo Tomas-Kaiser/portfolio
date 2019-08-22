@@ -17,7 +17,7 @@ function Footer() {
             <div class="col-sm-4">
                <h5>Download CV</h5>
                <p class="inline-block">
-                  Need a printable verstion of my CV? Send me a message.
+                  Need a printable version of my CV? Send me a message.
                </p>
             </div>
             <div class="col-sm-4 text-center">
