@@ -22,6 +22,18 @@ hr {
   border-top: 2px solid rgb(227, 77, 77);
 }
 
+.btn-success {
+  background-color: transparent !important;
+  border-color: #17a98a !important;
+}
+
+.btn-success:hover {
+  background-color: #12856c !important;
+  border-color: #12856c !important;
+  -webkit-transition: linear .5s; /* Safari prior 6.1 */
+  transition: linear .5s;
+}
+
 /*
 **
 *** Callout/header Section
