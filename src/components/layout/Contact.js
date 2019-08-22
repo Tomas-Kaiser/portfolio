@@ -163,7 +163,7 @@ class Contact extends Component {
                <input
                   type="submit"
                   value="Submit"
-                  className="btn"
+                  className="btn btn-success"
                   style={{ flex: '1' }}
                />
             </form>

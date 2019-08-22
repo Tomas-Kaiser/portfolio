@@ -24,12 +24,12 @@ hr {
 
 /*
 **
-*** Callout Section
+*** Callout/header Section
 **
 */
 
 .callout {
-  height: 30vh;
+  height: calc(100vh - 48px);
   background-color: bisque;
 
   background: url("./static/images/code.jpg") no-repeat center center fixed; 
@@ -39,12 +39,35 @@ hr {
   background-size: cover;
 }
 
+.img-avatar {
+  position: relative;
+  top: 30%;
+  max-width: 100%;
+  height: auto;
+  z-index: 1001;
+}
+
+.img-avatar img {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(187, 85, 85, 0.2);
+}
+
 .jumbotron {
-  background-color: #daeaf9d6;
+  background-color: #0f1317d6;
+  color: wheat;
   position: relative;
   padding: 2rem 1rem;
-  top: 10%;
+  top: 30%;
   max-width: 400px;
+  margin: auto;
+}
+
+.jumbotron button {
+  display: block;
   margin: auto;
 }
 
@@ -74,6 +97,16 @@ hr {
 
 .exp {
   font-size: 12px;
+}
+
+/*
+**
+*** Contact Section
+**
+*/
+
+.contact {
+  padding: 10px 0;
 }
 
 
