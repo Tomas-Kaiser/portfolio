@@ -16,7 +16,7 @@ class Technologies extends Component {
                <div className="row justify-content-center">
                   {
                      this.state.data.languages.map((lang) => (
-                        <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-1 text-center" key={lang.id}>
+                        <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 text-center" key={lang.id}>
                            <img src={require(`../../static/images/${lang.img}`)} alt={lang.title} className="img-lang mb-4" />
                            <h6 className="mb-0">{lang.title}</h6>
                            <p className="exp">{lang.exp}</p>
@@ -30,7 +30,7 @@ class Technologies extends Component {
                <div className="row justify-content-center">
                   {
                      this.state.data.databases.map((db) => (
-                        <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-1 text-center" key={db.id}>
+                        <div className="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 text-center" key={db.id}>
                            <img src={require(`../../static/images/${db.img}`)} alt={db.title} className="img-lang mb-4" />
                            <h6 className="mb-0">{db.title}</h6>
                            <p className="exp">{db.exp}</p>
