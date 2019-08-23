@@ -34,6 +34,10 @@ hr {
   transition: linear .5s;
 }
 
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
 
 
 /*
