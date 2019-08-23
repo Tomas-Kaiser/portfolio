@@ -3,6 +3,7 @@ import React from 'react';
 function Experience() {
    return (
       <section class="container container-exp">
+         <h2>Work Experience and Education</h2>
          <div class="timeline">
             <ul>
                <li>
@@ -82,7 +83,7 @@ function Experience() {
                      <h4>September 2012</h4>
                   </div>
                </li>
-               <div style={{clear: "both"}}></div>
+               <div style={{ clear: "both" }}></div>
             </ul>
          </div>
       </section>

@@ -155,8 +155,7 @@ hr {
 
 .timeline {
   position: relative;
-  margin: 50px auto;
-  padding: 40px 0;
+  margin: 0px auto;
   max-width: 1000px;
 }
 
@@ -269,6 +268,38 @@ hr {
   box-shadow: 0 0 0 3px rgba(233,33,99,0.3);
 }
 
+@media only screen and (max-width: 645px) {
+  .timeline ul li {
+    padding: 76px 40px;
+  }
+
+  .timeline ul li:nth-child(even) {
+    float: left;
+    text-align: right;
+  }
+  .timeline ul li:nth-child(even):before {
+    left: auto;
+    right: 11px;
+  }
+  .timeline ul li:nth-child(odd):before {
+    right: 11px;
+  }
+  .timeline ul li:nth-child(even) .time {
+    left: auto;
+    top: 17px;
+    right: 38px;
+  }
+  .timeline ul li:nth-child(odd) .time {
+    right: 38px;
+  }
+  .timeline ul li {
+    width: 100%;
+  }
+  .timeline::before {
+    right: 14px;
+    left: auto;
+  }
+}
 
 
 /*
