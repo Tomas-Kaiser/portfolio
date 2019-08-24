@@ -11,8 +11,21 @@ import Footer from './components/layout/Footer';
 import './App.css';
 
 class App extends Component {
+  componentDidMount() {
+    const nav = document.querySelector(".navbar");
+
+    const fixNav = (e) => {
+      if (window.scrollY >= 80) {
+        nav.classList.add("scroll-down-nav");
+      } else {
+        nav.classList.remove("scroll-down-nav");
+      }
+    }
+    window.addEventListener("scroll", fixNav);
+  }
+
   render() {
-    return(
+    return (
       <div className="App">
         <Navbar />
         <Header />
