@@ -81,7 +81,7 @@ class Projects extends Component {
 
 const cardStyle = {
    width: '18rem',
-   margin: '5px 5px 15px 5px',
+   margin: '10px auto',
 };
 
 const iconStyle = {
