@@ -9,6 +9,10 @@ body {
   line-height: 1.4;
 }
 
+h2 {
+  text-align: center;
+}
+
 a {
   color: #333;
   text-decoration: none;
@@ -19,12 +23,12 @@ hr {
   border: 0;
   margin: 2rem auto 2rem auto;
   text-align: center;
-  border-top: 2px solid rgb(227, 77, 77);
+  border-top: 2px solid rgb(50, 135, 70);
 }
 
 .btn-success {
-  background-color: transparent !important;
-  border-color: #17a98a !important;
+  background-color: #328746 !important;
+  border-color: #7ba284 !important;
 }
 
 .btn-success:hover {
@@ -45,6 +49,10 @@ hr {
 *** Navbar Section
 **
 */
+
+.bg-dark {
+  background-color: #333743 !important;
+}
 
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
@@ -94,7 +102,7 @@ hr {
 
 .jumbotron {
   background-color: #0f1317d6;
-  color: wheat;
+  color: #beb7a3;
   position: relative;
   padding: 2rem 1rem;
   top: 30%;
@@ -156,7 +164,13 @@ hr {
   padding: 0 0 50px 0;
 }
 
+.card-img-top {
+  height: 135px;
+}
 
+.card-title {
+  height: 48px;
+}
 
 /*
 **
@@ -220,9 +234,9 @@ hr {
   right: -6px;
   width: 10px;
   height: 10px;
-  background: rgba(233,33,99,1);
+  background: rgba(50,135,70,1);
   border-radius: 50%;
-  box-shadow: 0 0 0 3px rgba(233,33,99,0.2);
+  box-shadow: 0 0 0 3px rgba(50,135,70,0.2);
 }
 
 .timeline ul li:nth-child(even):before {
@@ -232,9 +246,9 @@ hr {
   left: -4px;
   width: 10px;
   height: 10px;
-  background: rgba(233,33,99,1);
+  background: rgba(50,135,70);
   border-radius: 50%;
-  box-shadow: 0 0 0 3px rgba(233,33,99,0.2);
+  box-shadow: 0 0 0 3px rgba(50,135,70,0.2);
 }
 
 .timeline ul li h3 {
@@ -242,7 +256,7 @@ hr {
   padding: 0;
   font-size: 22px;
   font-weight: bold;
-  color: rgba(233,33,99,1);
+  color: rgba(50,135,70);
 }
 
 .timeline ul li p {
@@ -264,10 +278,10 @@ hr {
   right: -156px;
   margin: 0;
   padding: 8px 16px;
-  background: rgba(233,33,99,1);
+  background: rgba(50,135,70);
   color: #fff;
   border-radius: 18px;
-  box-shadow: 0 0 0 3px rgba(233,33,99,0.3);
+  box-shadow: 0 0 0 3px rgba(50,135,70,0.3);
 }
 
 .timeline ul li:nth-child(even) .time {
@@ -277,10 +291,10 @@ hr {
   left: -156px;
   margin: 0;
   padding: 8px 16px;
-  background: rgba(233,33,99,1);
+  background: rgba(50,135,70);
   color: #fff;
   border-radius: 18px;
-  box-shadow: 0 0 0 3px rgba(233,33,99,0.3);
+  box-shadow: 0 0 0 3px rgba(50,135,70,0.3);
 }
 
 @media only screen and (max-width: 645px) {
@@ -327,6 +341,11 @@ hr {
   padding: 0 0 50px 0;
 }
 
+.container-contact form {
+  border: 1px solid #dcd7d7;
+  padding: 20px;
+  background: #f5f2f2;
+}
 
 
 /*
