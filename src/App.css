@@ -46,8 +46,14 @@ hr {
 **
 */
 
-.navbar-light .navbar-nav .nav-link {
-  color: rgb(194, 191, 191);
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.scroll-down-nav {
+  opacity: 0.85;
+  padding: 0;
+  transition: all 0.9s;
 }
 
 
@@ -59,7 +65,7 @@ hr {
 */
 
 .callout {
-  height: calc(100vh - 48px);
+  height: 100vh;
   background-color: bisque;
 
   background: url("./static/images/code.jpg") no-repeat center center fixed; 
@@ -110,7 +116,12 @@ hr {
 */
 
 .container-about {
-  padding: 0 0 50px 0;
+  padding: 16px 0 50px 0;
+}
+
+.about--padding-top {
+  padding-top: 135px;
+  transition: 0.5s;
 }
 
 .img-lang {
