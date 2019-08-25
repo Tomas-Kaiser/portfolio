@@ -160,12 +160,14 @@ class Contact extends Component {
                      Hi Tomas,
                   </textarea>
                </div>
+               <div className="text-center">
                <input
                   type="submit"
                   value="Submit"
                   className="btn btn-success"
                   style={{ flex: '1' }}
                />
+               </div>
             </form>
          </section>
       )

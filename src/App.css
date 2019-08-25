@@ -343,6 +343,8 @@ hr {
 
 .container-contact form {
   border: 1px solid #dcd7d7;
+  margin: auto;
+  width: 80%;
   padding: 20px;
   background: #f5f2f2;
 }
