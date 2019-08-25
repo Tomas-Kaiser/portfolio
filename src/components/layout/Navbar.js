@@ -15,7 +15,13 @@ function Navbar() {
                   <a className="nav-link" href="#">About Me</a>
                </li>
                <li className="nav-item">
+                  <a className="nav-link" href="#">Technologies</a>
+               </li>
+               <li className="nav-item">
                   <a className="nav-link" href="#">Projects</a>
+               </li>
+               <li className="nav-item">
+                  <a className="nav-link" href="#">Experience &amp; Education</a>
                </li>
                <li className="nav-item">
                   <a className="nav-link" href="#">Contact</a>
