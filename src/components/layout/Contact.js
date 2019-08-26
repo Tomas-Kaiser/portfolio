@@ -108,7 +108,7 @@ class Contact extends Component {
       }
       
       return (
-         <section className="container container-contact">
+         <section id="contact" className="container container-contact">
             <h2>Contact me</h2>
             <ToastContainer />
             <form onSubmit={this.sendMessage}>

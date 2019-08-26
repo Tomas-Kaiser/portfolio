@@ -3,7 +3,7 @@ import avatar from '../../static/images/avatar.jpg'
 
 function Header() {
    return (
-      <header className="container-fluid callout">
+      <header id="home" className="container-fluid callout">
          <div className="row">
             <div className="col-12">
                <div className="img-avatar">
