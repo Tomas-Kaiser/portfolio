@@ -64,6 +64,9 @@ hr {
   transition: all 0.9s;
 }
 
+.current {
+  color: rgba(255,255,255,.75) !important;
+}
 
 
 /*
@@ -124,7 +127,7 @@ hr {
 */
 
 .container-about {
-  padding: 16px 0 50px 0;
+  padding-top: 50px;
 }
 
 .about--padding-top {
@@ -149,7 +152,7 @@ hr {
 */
 
 .container-technologies {
-  padding: 0 0 50px 0;
+  padding-top: 100px;
 }
 
 
@@ -161,7 +164,7 @@ hr {
 */
 
 .container-projects {
-  padding: 0 0 50px 0;
+  padding-top: 100px;
 }
 
 .card-img-top {
@@ -179,7 +182,7 @@ hr {
 */
 
 .container-exp {
-  padding: 0 0 50px 0;
+  padding-top: 100px;
 }
 
 .timeline {
@@ -338,7 +341,8 @@ hr {
 */
 
 .container-contact {
-  padding: 0 0 50px 0;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .container-contact form {
