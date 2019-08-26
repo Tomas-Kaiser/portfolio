@@ -11,6 +11,7 @@ body {
 
 h2 {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 a {
@@ -381,12 +382,12 @@ footer {
   line-height: 7px;
   text-align: center;
   color: #fafafa;
-  background: #8f8f8f;
+  background: rgba(50,135,70);
   -moz-transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
 }
 
 .social-links li a span:hover {
-  background: #e84610;
+  background: rgba(50,135,70,0.3);
 }
