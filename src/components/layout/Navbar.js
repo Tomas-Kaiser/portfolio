@@ -9,22 +9,22 @@ function Navbar() {
          <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto">
                <li className="nav-item">
-                  <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                  <a className="nav-link" href="#home">Home<span className="sr-only">(current)</span></a>
                </li>
                <li className="nav-item">
-                  <a className="nav-link" href="#">About Me</a>
+                  <a className="nav-link" href="#about-me">About Me</a>
                </li>
                <li className="nav-item">
-                  <a className="nav-link" href="#">Technologies</a>
+                  <a className="nav-link" href="#technologies">Technologies</a>
                </li>
                <li className="nav-item">
-                  <a className="nav-link" href="#">Projects</a>
+                  <a className="nav-link" href="#projects">Projects</a>
                </li>
                <li className="nav-item">
-                  <a className="nav-link" href="#">Experience &amp; Education</a>
+                  <a className="nav-link" href="#experience-education">Experience &amp; Education</a>
                </li>
                <li className="nav-item">
-                  <a className="nav-link" href="#">Contact</a>
+                  <a className="nav-link" href="#contact">Contact</a>
                </li>
             </ul>
          </div>
