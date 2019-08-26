@@ -10,7 +10,7 @@ class Technologies extends Component {
       console.log(data)
       return (
          <section id="technologies" className="container container-technologies">
-               <h2 className="mb-4">Technologies I Work With</h2>
+               <h2>Technologies I Work With</h2>
 
                <div className="row justify-content-center">
                   {
