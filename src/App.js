@@ -13,7 +13,9 @@ import './App.css';
 class App extends Component {
   componentDidMount() {
     const nav = document.querySelector(".navbar");
+    const mainNavLinks = document.querySelectorAll("nav ul li a");
 
+    // Fixed navbar when scrolling down
     const fixNav = (e) => {
       if (window.scrollY >= 80) {
         nav.classList.add("scroll-down-nav");
@@ -22,6 +24,22 @@ class App extends Component {
       }
     }
     window.addEventListener("scroll", fixNav);
+
+    // Highlighted nav links based on position on the page
+    window.addEventListener("scroll", event => {
+      let fromTop = window.scrollY;
+      
+      mainNavLinks.forEach(link => {
+        let section = document.querySelector(link.hash);
+        
+        if (section.offsetTop - 80 <= fromTop &&
+          section.offsetTop + section.offsetHeight - 80 > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");
+          }
+      });
+    });
   }
 
   render() {
