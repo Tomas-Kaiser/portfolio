@@ -106,7 +106,7 @@ hr {
 
 .jumbotron {
   background-color: #0f1317d6;
-  color: #beb7a3;
+  color: #dcd7d7;
   position: relative;
   padding: 2rem 1rem;
   top: 30%;
@@ -163,6 +163,11 @@ hr {
 *** Projects Section
 **
 */
+
+.card:hover {
+  box-shadow: 0px 0px 10px 1px #000000;
+  transition: 1s;
+}
 
 .container-projects {
   padding-top: 100px;
