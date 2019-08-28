@@ -9,7 +9,7 @@ function Navbar() {
          <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto">
                <li className="nav-item">
-                  <a className="nav-link" href="#home">Home<span className="sr-only">(current)</span></a>
+                  <a className="nav-link current" href="#home">Home<span className="sr-only">(current)</span></a>
                </li>
                <li className="nav-item">
                   <a className="nav-link" href="#about-me">About Me</a>
