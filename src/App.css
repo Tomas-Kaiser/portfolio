@@ -94,6 +94,15 @@ hr {
   max-width: 100%;
   height: auto;
   z-index: 1001;
+  animation-name: big;
+  animation-delay: 0.5s;
+  animation-duration: 2.5s;
+}
+
+@keyframes big {
+  0%   { top: 30%; }
+  50%  { top: 35%; }
+  100% { top: 30%; }
 }
 
 .img-avatar img {
@@ -113,6 +122,9 @@ hr {
   top: 30%;
   max-width: 400px;
   margin: auto;
+  animation-name: big;
+  animation-delay: 0.5s;
+  animation-duration: 2.5s;
 }
 
 .jumbotron button {

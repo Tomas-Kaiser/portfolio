@@ -16,9 +16,9 @@ class App extends Component {
     // Debounce function
     function debounce(func, wait = 20, immediate = true) {
       let timeout;
-      return function() {
+      return function () {
         let context = this, args = arguments;
-        let later = function() {
+        let later = function () {
           timeout = null;
           if (!immediate) func.apply(context, args);
         };
@@ -28,7 +28,7 @@ class App extends Component {
         if (callNow) func.apply(context, args);
       }
     }
-    
+
     // Fixed navbar when scrolling down
     const nav = document.querySelector(".navbar");
     const mainNavLinks = document.querySelectorAll("nav ul li a");
@@ -45,16 +45,16 @@ class App extends Component {
     // Highlighted nav links based on position on the page
     const highlightedNavItem = (e) => {
       let fromTop = window.scrollY;
-      
+
       mainNavLinks.forEach(link => {
         let section = document.querySelector(link.hash);
-        
+
         if (section.offsetTop - 80 <= fromTop &&
           section.offsetTop + section.offsetHeight - 80 > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");
-          }
+          link.classList.add("current");
+        } else {
+          link.classList.remove("current");
+        }
       });
     }
     window.addEventListener("scroll", debounce(highlightedNavItem));
@@ -64,7 +64,6 @@ class App extends Component {
     let sectionExp = document.querySelector("#experience-education");
 
     function checkSlide(e) {
-      console.log(e)
       sliderExps.forEach(sliderExp => {
         const slideInAt = window.scrollY + 250;
         if (sectionExp.offsetTop < slideInAt) {
