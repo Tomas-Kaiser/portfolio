@@ -57,7 +57,7 @@ class App extends Component {
         }
       });
     }
-    window.addEventListener("scroll", debounce(highlightedNavItem));
+    window.addEventListener("scroll", debounce(highlightedNavItem, 10));
 
     // Exp slide in effect
     const sliderExps = document.querySelectorAll(".slide-in");
