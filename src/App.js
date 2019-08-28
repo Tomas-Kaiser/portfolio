@@ -12,21 +12,38 @@ import './App.css';
 
 class App extends Component {
   componentDidMount() {
+
+    // Debounce function
+    function debounce(func, wait = 20, immediate = true) {
+      let timeout;
+      return function() {
+        let context = this, args = arguments;
+        let later = function() {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+        };
+        let callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait)
+        if (callNow) func.apply(context, args);
+      }
+    }
+    
+    // Fixed navbar when scrolling down
     const nav = document.querySelector(".navbar");
     const mainNavLinks = document.querySelectorAll("nav ul li a");
 
-    // Fixed navbar when scrolling down
     const fixNav = (e) => {
-      if (window.scrollY >= 80) {
+      if (window.scrollY >= 90) {
         nav.classList.add("scroll-down-nav");
       } else {
         nav.classList.remove("scroll-down-nav");
       }
     }
-    window.addEventListener("scroll", fixNav);
+    window.addEventListener("scroll", debounce(fixNav, 10));
 
     // Highlighted nav links based on position on the page
-    window.addEventListener("scroll", event => {
+    const highlightedNavItem = (e) => {
       let fromTop = window.scrollY;
       
       mainNavLinks.forEach(link => {
@@ -39,7 +56,26 @@ class App extends Component {
             link.classList.remove("current");
           }
       });
-    });
+    }
+    window.addEventListener("scroll", debounce(highlightedNavItem));
+
+    // Exp slide in effect
+    const sliderExps = document.querySelectorAll(".slide-in");
+    let sectionExp = document.querySelector("#experience-education");
+
+    function checkSlide(e) {
+      console.log(e)
+      sliderExps.forEach(sliderExp => {
+        const slideInAt = window.scrollY + 250;
+        if (sectionExp.offsetTop < slideInAt) {
+          sliderExp.classList.add("active");
+        } else {
+          sliderExp.classList.remove("active");
+        }
+      });
+    }
+    window.addEventListener("scroll", debounce(checkSlide));
+
   }
 
   render() {

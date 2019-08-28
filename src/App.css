@@ -371,6 +371,50 @@ hr {
   }
 }
 
+.slide-in {
+  opacity: 0.3;
+  transition: all 2.5s;
+}
+
+.timeline ul li:nth-child(odd) .slide-in {
+  transform: translateX(-30%);
+}
+
+.timeline ul li:nth-child(odd) .time {
+  transform: translateX(100%);
+}
+
+.timeline ul li:nth-child(even) .slide-in {
+  transform: translateX(30%);
+}
+
+.timeline ul li:nth-child(even) .time {
+  transform: translateX(-100%);
+}
+
+.active {
+  opacity: 1;
+  transform: translateX(0%) !important;
+}
+
+@media only screen and (max-width: 710px) {
+  .timeline ul li:nth-child(odd) .slide-in {
+    transform: translateX(-15%);
+  }
+  
+  .timeline ul li:nth-child(odd) .time {
+    transform: translateX(-40%);
+  }
+  
+  .timeline ul li:nth-child(even) .slide-in {
+    transform: translateX(-15%);
+  }
+  
+  .timeline ul li:nth-child(even) .time {
+    transform: translateX(-40%);
+  }
+}
+
 
 /*
 **
