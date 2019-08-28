@@ -9,6 +9,7 @@ import Contact from './components/layout/Contact';
 import Footer from './components/layout/Footer';
 
 import './App.css';
+import { faWindowMinimize } from '@fortawesome/free-solid-svg-icons';
 
 class App extends Component {
   componentDidMount() {
@@ -74,6 +75,23 @@ class App extends Component {
       });
     }
     window.addEventListener("scroll", debounce(checkSlide));
+
+    // Fade in sections when scrolling down
+    const sections = document.querySelectorAll(".fade");
+
+    const fadeIn = (e) => {
+      sections.forEach(section => {
+        if (section.offsetTop < (window.scrollY + window.innerHeight - 300)) {
+          console.log("Add class fade-in")
+          section.classList.add("fade-in");
+        } else {
+          console.log("Remove class fade-in")
+          section.classList.remove("fade-in");
+        }
+      })
+    }
+
+    window.addEventListener("scroll", debounce(fadeIn));
 
   }
 

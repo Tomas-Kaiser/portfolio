@@ -45,7 +45,7 @@ class Projects extends Component {
       ];
 
       return (
-         <section id="projects" className="container container-projects">
+         <section id="projects" className="container container-projects fade">
             <h2>Projects</h2>
             <div className="row">
                {

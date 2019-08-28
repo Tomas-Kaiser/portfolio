@@ -9,7 +9,7 @@ class Technologies extends Component {
    render() {
       console.log(data)
       return (
-         <section id="technologies" className="container container-technologies">
+         <section id="technologies" className="container container-technologies fade">
                <h2>Technologies I Work With</h2>
 
                <div className="row justify-content-center">

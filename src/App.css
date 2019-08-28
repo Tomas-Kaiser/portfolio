@@ -45,6 +45,17 @@ hr {
   margin-left: 0;
 }
 
+.fade {
+  transform: translateY(50px);
+  opacity: 0.4;
+  transition: 2s;
+}
+
+.fade-in {
+  transform: translateY(0px) !important;
+  opacity: 1 !important;
+  transition: 2s !important;
+}
 
 /*
 **
