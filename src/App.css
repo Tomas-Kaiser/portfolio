@@ -68,6 +68,7 @@ hr {
 
 .current {
   color: rgba(255,255,255,.75) !important;
+  text-decoration: underline;
 }
 
 
