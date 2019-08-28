@@ -9,7 +9,6 @@ import Contact from './components/layout/Contact';
 import Footer from './components/layout/Footer';
 
 import './App.css';
-import { faWindowMinimize } from '@fortawesome/free-solid-svg-icons';
 
 class App extends Component {
   componentDidMount() {
