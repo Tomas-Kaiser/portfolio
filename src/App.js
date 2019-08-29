@@ -81,10 +81,8 @@ class App extends Component {
     const fadeIn = (e) => {
       sections.forEach(section => {
         if (section.offsetTop < (window.scrollY + window.innerHeight - 300)) {
-          console.log("Add class fade-in")
           section.classList.add("fade-in");
         } else {
-          console.log("Remove class fade-in")
           section.classList.remove("fade-in");
         }
       })
