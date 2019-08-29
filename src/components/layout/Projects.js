@@ -40,7 +40,7 @@ class Projects extends Component {
             img: "ReactJS_Neigberhood_project",
             technologies: ["HTML5", "CSS3", "ReactJS", "Unsplash REST API"],
             github: "https://github.com/Tomas-Kaiser/Neigborhood-MAP-reactJS-FEND-UDACITY",
-            link: "https://tomas-kaiser.github.io/Neigborhood-MAP-reactJS-FEND-UDACITY/",
+            link: "https://neigbrohood-map-react.herokuapp.com/",
          }
       ];
 
