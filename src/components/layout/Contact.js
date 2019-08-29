@@ -69,7 +69,8 @@ class Contact extends Component {
       .then(function(response) {
  
          toast(`Hi ${templateParams.from_name}, your message has been sent successfully`, {
-            className: "toastr"
+            className: "toastr",
+            progressClassName: 'fancy-progress-bar',
          });
          console.log("SUCCESS", response.status, response.txt)
       }, function(err){
