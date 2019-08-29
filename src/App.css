@@ -67,6 +67,10 @@ hr {
 **
 */
 
+.navbar {
+  transition: 2s;
+}
+
 .bg-dark {
   background-color: #333743 !important;
 }
