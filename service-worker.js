@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Tomas-Kaiser/portfolio/precache-manifest.2db650a91bfe314c652dc1edd7eb14ea.js"
+  "/Tomas-Kaiser/portfolio/precache-manifest.967113186fbbc728bda6924746792e3d.js"
 );
 
 self.addEventListener('message', (event) => {
