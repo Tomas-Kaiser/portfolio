@@ -14,7 +14,7 @@ class App extends Component {
   componentDidMount() {
 
     // Debounce function
-    function debounce(func, wait = 20, immediate = true) {
+    function debounce(func, wait = 5, immediate = true) {
       let timeout;
       return function () {
         let context = this, args = arguments;
@@ -57,7 +57,7 @@ class App extends Component {
         }
       });
     }
-    window.addEventListener("scroll", debounce(highlightedNavItem, 10));
+    window.addEventListener("scroll", debounce(highlightedNavItem));
 
     // Exp slide in effect
     const sliderExps = document.querySelectorAll(".slide-in");
