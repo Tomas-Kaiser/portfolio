@@ -14,7 +14,9 @@ function Header() {
                <div className="jumbotron">
                   <h1 className="text-center">Tomas Kaiser</h1>
                   <p className="text-center text-white">Full Stack Software Developer</p>
-                  <button className="btn btn-success">Hire me</button>
+                  <div className="text-center">
+                     <a href="#contact" className="btn btn-success my-auto">Hire me</a>
+                  </div>
                </div>
             </div>
          </div>
