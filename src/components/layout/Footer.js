@@ -16,8 +16,8 @@ function Footer() {
                <h5>MySocial</h5>
                <ul className="list-inline social-links">
                   <li>
-                     <a href="https://github.com/Tomas-Kaiser" target="_blank"><span><FontAwesomeIcon icon={faGithub} /></span></a>
-                     <a href="https://www.linkedin.com/in/tomas-kaiser-06/" target="_blank"><span><FontAwesomeIcon icon={faLinkedin} /></span></a>
+                     <a href="https://github.com/Tomas-Kaiser" target="_blank" rel="noopener noreferrer"><span><FontAwesomeIcon icon={faGithub} /></span></a>
+                     <a href="https://www.linkedin.com/in/tomas-kaiser-06/" target="_blank" rel="noopener noreferrer"><span><FontAwesomeIcon icon={faLinkedin} /></span></a>
 
                   </li>
                </ul>
