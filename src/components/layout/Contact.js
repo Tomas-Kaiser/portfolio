@@ -68,9 +68,9 @@ class Contact extends Component {
       emailjs.send('tomas_kaiser06_gmail_com', 'portfolio', templateParams, 'user_Hcoo4IL6plrIsER227vg0')
       .then(function(response) {
  
-         toast.success(`Hi ${templateParams.from_name}, your message has been sent successfully`, {
-            position: toast.POSITION.TOP_CENTER
-         })
+         toast(`Hi ${templateParams.from_name}, your message has been sent successfully`, {
+            className: "toastr"
+         });
          console.log("SUCCESS", response.status, response.txt)
       }, function(err){
          toast.error(err, 'Error:,', {displayDuration:3000})

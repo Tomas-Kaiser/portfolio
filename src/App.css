@@ -463,6 +463,24 @@ hr {
   background: #dcd7d7;;
 }
 
+.Toastify__toast-container {
+  position: absolute;
+  top: 15vh;
+  left: 5vh;
+}
+
+@media only screen and (max-width: 450px) {
+  .Toastify__toast-container {
+    width: 250px;
+    left: 1vh;
+  }
+}
+
+.toastr {
+  background: #328746;
+  color: white;
+}
+
 
 /*
 **
