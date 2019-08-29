@@ -500,6 +500,12 @@ footer {
   padding: 10px 0;
 }
 
+@media only screen and (max-width: 575.5px) {
+  footer h5 {
+    text-align: center;
+  }
+}
+
 .social-links {
   margin-top: 20px;
   padding-bottom: 15px;
