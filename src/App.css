@@ -135,7 +135,7 @@ hr {
 }
 
 .jumbotron {
-  background-color: #0f1317d6;
+  background-color: rgba(15,19,23,0.84);
   color: #dcd7d7;
   position: relative;
   padding: 2rem 1rem;
