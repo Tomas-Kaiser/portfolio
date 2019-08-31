@@ -99,6 +99,7 @@ hr {
 }
 
 
+
 /*
 **
 *** Callout/header Section
@@ -158,6 +159,20 @@ hr {
 .jumbotron button {
   display: block;
   margin: auto;
+}
+
+@media only screen and (min-width: 767.5px) {
+  .jumbotron {
+    top: 0%;
+  }
+  .img-avatar {
+    top: 0%;
+  }
+  @keyframes big {
+    0%   { top: 0%; }
+    50%  { top: 5%; }
+    100% { top: 0%; }
+  }
 }
 
 
