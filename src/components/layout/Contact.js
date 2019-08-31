@@ -58,18 +58,15 @@ class Contact extends Component {
          return
       }
 
-      let alert = document.querySelector(".alert");
-      console.log(alert)
+      const alert = document.querySelector(".alert");
 
       alert.classList.remove("hidden-alert")
       alert.classList.add("show-alert");
 
-      if (alert) {
-         setTimeout(function () {
-            alert.classList.add("hidden-alert")
-            alert.classList.remove("show-alert");
-         }, 3000);
-      }
+      setTimeout(function () {
+         alert.classList.add("hidden-alert")
+         alert.classList.remove("show-alert");
+      }, 3000);
 
       let templateParams = {
          "from_name": this.state.name,
