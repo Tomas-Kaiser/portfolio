@@ -74,7 +74,8 @@ class Contact extends Component {
          "message": this.state.message,
       }
 
-      emailjs.send('tomas_kaiser06_gmail_com', 'portfolio', templateParams, 'user_Hcoo4IL6plrIsER227vg0')
+      console.log("email API@ ", process.env.REACT_APP_API_EMAILJS)
+      emailjs.send('tomas_kaiser06_gmail_com', 'portfolio', templateParams, `${process.env.REACT_APP_API_EMAILJS}`)
 
       this.setState({
          name: "",
