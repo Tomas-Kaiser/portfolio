@@ -13,7 +13,7 @@ function Header() {
             <div className="col-12">
                <div className="jumbotron">
                   <h1 className="text-center">Tomas Kaiser</h1>
-                  <p className="text-center text-white">Full Stack Software Developer</p>
+                  <p className="text-center text-white text-uppercase">Full Stack Software Developer</p>
                   <div className="text-center">
                      <a href="#contact" className="btn btn-success my-auto">Hire me</a>
                   </div>

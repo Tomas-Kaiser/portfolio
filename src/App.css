@@ -156,6 +156,10 @@ hr {
   animation-duration: 2.5s;
 }
 
+.jumbotron p {
+  letter-spacing: 3px;
+}
+
 .jumbotron button {
   display: block;
   margin: auto;
