@@ -13,7 +13,7 @@ function Footer() {
                </p>
             </div>
             <div className="col-sm-4 text-center">
-               <h5>MySocial</h5>
+               <h5>My Social</h5>
                <ul className="list-inline social-links">
                   <li>
                      <a href="https://github.com/Tomas-Kaiser" target="_blank" rel="noopener noreferrer"><span><FontAwesomeIcon icon={faGithub} /></span></a>
