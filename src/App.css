@@ -475,27 +475,20 @@ hr {
   background: #dcd7d7;;
 }
 
-.Toastify__toast-container {
-  position: absolute;
-  top: 15vh;
-  left: 5vh;
+.show-alert {
+  display: block;
+  animation: showAlert 1s ease-in-out both;
 }
 
-@media only screen and (max-width: 450px) {
-  .Toastify__toast-container {
-    width: 250px;
-    left: 1vh;
-  }
+.hidden-alert {
+  display: none;
 }
 
-.toastr {
-  background: #328746;
-  color: white;
+@keyframes showAlert {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
-.fancy-progress-bar{
-  background: #0c3b31;
-}
 
 
 /*

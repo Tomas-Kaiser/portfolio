@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.min.css';
 import * as emailjs from 'emailjs-com';
 
 
@@ -13,7 +11,8 @@ class Contact extends Component {
          name: "",
          email: "",
          message: ""
-      }
+      },
+      msgSent: "Message was sent"
    }
 
    onChangeInput = (e) => this.setState({ [e.target.name]: e.target.value })
@@ -50,13 +49,26 @@ class Contact extends Component {
 
       return formIsValid
    }
-   
+
 
    sendMessage = (e) => {
       e.preventDefault();
 
-      if(!this.validateMail()) {
+      if (!this.validateMail()) {
          return
+      }
+
+      let alert = document.querySelector(".alert");
+      console.log(alert)
+
+      alert.classList.remove("hidden-alert")
+      alert.classList.add("show-alert");
+
+      if (alert) {
+         setTimeout(function () {
+            alert.classList.add("hidden-alert")
+            alert.classList.remove("show-alert");
+         }, 3000);
       }
 
       let templateParams = {
@@ -66,17 +78,6 @@ class Contact extends Component {
       }
 
       emailjs.send('tomas_kaiser06_gmail_com', 'portfolio', templateParams, 'user_Hcoo4IL6plrIsER227vg0')
-      .then(function(response) {
- 
-         toast(`Hi ${templateParams.from_name}, your message has been sent successfully`, {
-            className: "toastr",
-            progressClassName: 'fancy-progress-bar',
-         });
-         console.log("SUCCESS", response.status, response.txt)
-      }, function(err){
-         toast.error(err, 'Error:,', {displayDuration:3000})
-         console.log(err)
-      })
 
       this.setState({
          name: "",
@@ -107,15 +108,14 @@ class Contact extends Component {
       if (this.state.errors.message) {
          errorMsg.message = <div style={warningText}>{this.state.errors.message}</div>
       }
-      
+
       return (
          <section id="contact" className="container container-contact fade">
             <h2>Contact me</h2>
-            <ToastContainer />
             <form onSubmit={this.sendMessage}>
                <div className="form-group">
                   <label htmlFor="nameInput">Your name</label>
-                     { errorMsg.name }
+                  {errorMsg.name}
                   <input
                      type="text"
                      name="name"
@@ -128,10 +128,9 @@ class Contact extends Component {
                      required
                   />
                </div>
-
                <div className="form-group">
                   <label htmlFor="emailInput">Email address</label>
-                  { errorMsg.email }
+                  {errorMsg.email}
                   <input
                      type="email"
                      name="email"
@@ -147,7 +146,7 @@ class Contact extends Component {
 
                <div className="form-group">
                   <label htmlFor="textAre">Write me a message</label>
-                  { errorMsg.message }
+                  {errorMsg.message}
                   <textarea
                      className="form-control"
                      name="message"
@@ -162,12 +161,16 @@ class Contact extends Component {
                   </textarea>
                </div>
                <div className="text-center">
-               <input
-                  type="submit"
-                  value="Submit"
-                  className="btn btn-success"
-                  style={{ flex: '1' }}
-               />
+                  <input
+                     type="submit"
+                     value="Submit"
+                     className="btn btn-success"
+                     style={{ flex: '1' }}
+                  />
+                  <div className="alert alert-success alert-dismissible mt-3 hidden-alert" role="alert">
+                     <button type="button" className="close" data-dismiss="alert">&times;</button>
+                     <strong>Success!</strong> {this.state.msgSent}
+                  </div>
                </div>
             </form>
          </section>
