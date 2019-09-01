@@ -8,6 +8,17 @@ function Experience() {
             <ul>
                <li>
                   <div className="content slide-in">
+                     <h3>National College of Ireland</h3>
+                     <p>
+                        Higher Diploma in Computer Science (evening full time course)
+                     </p>
+                  </div>
+                  <div className="time slide-in">
+                     <h4>2019/2020</h4>
+                  </div>
+               </li>
+               <li>
+                  <div className="content slide-in">
                      <h3>Code Institute</h3>
                      <p>
                         Diploma in full stack software development (First Class Honours), credit-rated by <b>Edinburgh Napier University</b>
