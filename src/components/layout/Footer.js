@@ -9,7 +9,7 @@ function Footer() {
             <div className="col-sm-4">
                <h5>About Me</h5>
                <p className="inline-block">
-                  I am a Full Stack Web Developer. If you want me hire or work on a project, do not hesitate to contact me
+                  I am a Full Stack Web Developer. If you want me to hire or work on a project, do not hesitate to contact me
                </p>
             </div>
             <div className="col-sm-4 text-center">

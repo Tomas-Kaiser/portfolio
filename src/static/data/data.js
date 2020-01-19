@@ -31,8 +31,8 @@ const languages = [
    },
    {
       id: 20,
-      title: "C",
-      img: "C.png",
+      title: "Java",
+      img: "Java.PNG",
       exp: "Basic",
    },
 ];
